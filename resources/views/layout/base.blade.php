@@ -14,7 +14,10 @@
     @include('includes.menu')
     @yield('content')
     <script src={{ URL ::asset("assets/js/jquery.min.js") }}></script>
-    <script src={{ URL ::asset("assets/bootstrap/js/bootstrap.min.js") }}></script>
+    <script src={{ URL ::asset("assets/bootstrap/js/bootstrap.min.js") }}>
+    </script>
+    <script src={{ URL ::asset("assets/bootstrap/js/bootstrap.bundle.min.js") }}>
+    </script>
 </body>
 
 </html>
