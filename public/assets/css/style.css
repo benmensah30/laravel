@@ -19,5 +19,6 @@
 }
 
 html, body {
-    font-family: roboto-reguler;
+    font-family: roboto-light;
+    src: url(../fonts/Roboto-Light.ttf);
 }
