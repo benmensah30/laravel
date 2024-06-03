@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\category;
 
 use Illuminate\Http\Request;
 
@@ -19,14 +20,18 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view("products");    }
+        return view("categories.create");
+    }
 
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        //
+        $category = new Category();
+        $category->name = $request->input("name");
+        $category->save();
+        return redirect()->route("category.create");
     }
 
     /**
